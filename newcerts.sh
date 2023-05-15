@@ -20,3 +20,4 @@ openssl pkcs12 -export -in hostname.crt -inkey hostname.key -name self-signed-ss
 keytool -v -importkeystore -srckeystore keystore.p12 -srcstoretype PKCS12 -destkeystore mykeystore -deststoretype JKS
 
 rm -rf v3.ext
+echo "done"
